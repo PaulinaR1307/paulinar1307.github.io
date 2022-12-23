@@ -16,10 +16,6 @@
     color: #696969;
 }
 
-.navlink{
-    display: flex;
-    align-items: center;
-}
 
 .logo img{
     height: 50px;
@@ -34,7 +30,7 @@ body{
 }
 
 .grid-container {
-    margin-top: 80pxpx;
+    margin-top: 80px;
     display: grid;
     grid-template-columns: repeat(auto-fill, 230px);
     gap: 20px;
@@ -52,17 +48,6 @@ body{
 }
 
 
-
-
-.grid-container-2{
-    display: grid;
-    grid-template-columns: repeat(5,7%);
-    margin-top: auto;
-    font-size: larger;
-    font-weight: 300;
-    margin-bottom: 10%;
-}
-
 img:hover{
     cursor: pointer;
     transform:scale(1.05);
@@ -77,20 +62,75 @@ border-color:#696969;
 width: 800px;
 height: 50px;
 transition: all .5s;
-
 }
 
-.i{
-    margin-right: 20px;
-}
+@media (max-width: 600px) and (min-width: 250px) {
+ input.src {
+    display: none;
+ }
+ .grid-container {
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between; }
 
-@media (max-width: 952px) {
-    padding-left: 20px;
+ .header {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 10px;
+ }
+ .GRID-ITEM{
+    display: grid;
+    grid-template-columns: repeat(3, 20px);
+    gap:20px;
+ }
     }
 
+@media (min-width: 601px) and (max-width: 914px) {
 
-@media (max-width: 858px) {
-  
-    
+    input.src {
+        display: none;
+    }
+    .grid-container {
+        width:  50%;
+        margin-left: 20px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: space-between;
+        align-items: center;
+    }
+.home{
+    font-size: 50PX;
+    color: crimson;
+    font-family: 'Times New Roman', Times, serif;
+}
+.create{
+    font-size: 50PX;
+    color: crimson;
+    font-family: 'Times New Roman', Times, serif;
+}
+    .i{
+        margin-right: 20px;
+        color: black;
+    }
+
+ }
+
+@media (min-width: 915px) and (max-width:1026px) {
+    input.src {
+        width: 400px;
+        height: 30px;
 }
 
+.grid-container{
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+justify-content: space-between;
+margin-left: auto;
+
+}
+.header {
+    font-size: 15px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color:rgb(12, 5, 5)
+}
+}
